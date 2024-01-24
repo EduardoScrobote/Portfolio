@@ -1,64 +1,46 @@
 "use client";
 
-import { Typewriter } from "react-simple-typewriter";
-
-import { BsCursorText } from "react-icons/bs";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Projects from "@/components/Projetcs/Projects";
+import { useState } from "react";
 
 export default function Home() {
+  const [activeInfo, setActiveInfo] = useState<string>("about");
+
   return (
-    <div className="flex box-border h-screen flex-col">
-      <div className="border-b  box-border ml-16 mt-16 w-[22%] border-purple-600">
-        <h1 className="text-5xl font-bold text-purple-600">Eduardo Scrobote</h1>
-        <h1
-          style={{
-            marginTop: "8px",
-            fontSize: "24px",
-            fontWeight: "semi-bold",
-          }}
-        >
-          <span>
-            <Typewriter
-              words={["Desenvolvedor web front-end"]}
-              cursorColor="purple"
-              cursor={true}
-              cursorBlinking={true}
-            />
-          </span>
-        </h1>
-      </div>
-      <div className="w-full h-screen flex flex-row justify-center gap-[15%] items-center">
-        <div className="flex flex-col mb-8px justify-center w-[30%] items-center">
-          <h2 className="text-2xl">
-            Eu gosto muito de criar aplicativos web utilizando NextJS,
-            TypeScript e Tailwind...
-          </h2>
-          <h1
-            style={{
-              marginTop: "8px",
-              fontSize: "28px",
-              fontWeight: "semi-bold",
-              color: "rgb(147,51,234)",
-            }}
-          >
-            <span>
-              <Typewriter
-                words={[
-                  "Por que eu gosto de next?",
-                  "Porque ele é renderizado no servidor!!!",
-                  "Rapido como um raio...",
-                  "Por que eu gosto de TypeScript?",
-                  "Por que eu encontro erros enquanto desenvolvo IRADOO!",
-                ]}
-                loop={true}
-                cursorColor="purple"
-                cursor={true}
-              />
-            </span>
-          </h1>
+    <div className="flex box-border text-black h-screen flex-col justify-center items-center p-8">
+      <div className="bg-giphy border border-purple-700 bg-cover flex-row bg-[center_right_17em] flex  w-full h-screen">
+        <div className="flex flex-col w-screen">
+          <h1 className="pl-8 pt-8 text-4xl font-bold">Eduardo Scrobote</h1>
+          <p className="pl-8 text-lg font-semibold	">Front-end Developer</p>
+          <div className="m-12 w-20 hover:cursor-none text-lg">
+            <h1
+              onClick={() => setActiveInfo("about")}
+              className=" w-24 hover:cursor-none hover:p-1 mb-0 hover:bg-purple-100 rounded-md duration-300 hover:text-slate-800"
+            >
+              • About
+            </h1>
+            <h1
+              onClick={() => setActiveInfo("projects")}
+              className=" w-24 hover:cursor-none hover:p-1 mb-0 mt-0 hover:bg-purple-100 rounded-md duration-300 hover:text-slate-800"
+            >
+              • Projects
+            </h1>
+            <h1
+              onClick={() => setActiveInfo("contact")}
+              className="w-24 hover:cursor-none hover:p-1 mb-0 mt-0 hover:bg-purple-100 rounded-md duration-300 hover:text-slate-800"
+            >
+              • Contact
+            </h1>
+          </div>
         </div>
-        <div className="bg-blue-700 w-72 h-72"></div>
+        <div className="w-screen h-full flex justify-end items-end bg-transparent text-black">
+          {activeInfo === "about" && <About />}
+          {activeInfo === "projects" && <Projects />}
+          {activeInfo === "contact" && <Contact />}
+        </div>
       </div>
-      <footer className="box-border bg-pink-400"></footer>
     </div>
   );
 }
