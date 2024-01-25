@@ -88,7 +88,9 @@ function Contact() {
           onClick={copyWhats}
           className="hover:text-purple-700 hover:cursor-pointer"
         >
-          Telefone
+          <a href="https://wa.me//5541997599449?text=Olá%20vi%20seu%20portfolio%20e%20gostaria%20de%20falar%20com%20eduardo">
+            Telefone
+          </a>
         </h1>
         <FaWhatsapp
           color="purple"
