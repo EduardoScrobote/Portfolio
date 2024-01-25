@@ -74,7 +74,9 @@ function Contact() {
           onClick={copyEmail}
           className="hover:text-purple-700 hover:cursor-pointer"
         >
-          E-mail
+          <a href="mailto:EduardoScroboteProfissional@gmail.com?subject=Contato-Eduardo">
+            E-mail
+          </a>
         </h1>
         <CgMail
           color="purple"
