@@ -33,6 +33,14 @@ export default function Home() {
             >
               • Contact
             </h1>
+            <h1
+              onClick={() =>
+                window.open("https://playground-two-inky.vercel.app/")
+              }
+              className="w-32 hover:cursor-none hover:p-1 mb-0 mt-0 hover:bg-purple-100 rounded-md duration-300 hover:text-slate-800"
+            >
+              • Playground
+            </h1>
           </div>
         </div>
         <div className="w-screen h-full flex justify-end items-end bg-transparent text-black">
