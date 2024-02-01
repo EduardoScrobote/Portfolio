@@ -16,6 +16,6 @@ export const ProjectsData: ProjectPropType = [
     date: "2023 / atualmente",
     project: "Programação fortificada",
     desc: "Projeto de criação de conteúdo sobre desenvolvimento de software",
-    path: "https://www.youtube.com/watch?v=7Q5F2NKQ1UQ&t=1s",
+    path: "https://www.youtube.com/@ProgramacaoFortificada/featured",
   },
 ];
