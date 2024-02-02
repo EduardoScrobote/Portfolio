@@ -17,19 +17,19 @@ export default function Home() {
           <div className="m-12 w-20 hover:cursor-none text-lg">
             <h1
               onClick={() => setActiveInfo("about")}
-              className=" w-32 hover:cursor-none hover:p-1 mb-0 hover:bg-purple-100 rounded-md duration-300 hover:text-slate-800"
+              className=" w-32 hover:cursor-none hover:p-1 mb-0 hover:bg-purple-100 rounded-md duration-300 font-semibold text-lg hover:text-slate-800"
             >
               • Sobre
             </h1>
             <h1
               onClick={() => setActiveInfo("projects")}
-              className=" w-32 hover:cursor-none hover:p-1 mb-0 mt-0 hover:bg-purple-100 rounded-md duration-300 hover:text-slate-800"
+              className=" w-32 hover:cursor-none hover:p-1 mb-0 mt-0 hover:bg-purple-100 font-semibold text-lg   rounded-md duration-300 hover:text-slate-800"
             >
               • Projetos
             </h1>
             <h1
               onClick={() => setActiveInfo("contact")}
-              className="w-32 hover:cursor-none hover:p-1 mb-0 mt-0 hover:bg-purple-100 rounded-md duration-300 hover:text-slate-800"
+              className="w-32 hover:cursor-none hover:p-1 mb-0 mt-0 hover:bg-purple-100 font-semibold text-lg   rounded-md duration-300 hover:text-slate-800"
             >
               • Contato
             </h1>
@@ -37,7 +37,7 @@ export default function Home() {
               onClick={() =>
                 window.open("https://playground-two-inky.vercel.app/")
               }
-              className="w-32 hover:cursor-none hover:p-1 mb-0 mt-0 hover:bg-purple-100 rounded-md duration-300 hover:text-slate-800"
+              className="w-36 hover:cursor-none hover:p-1 mb-0 mt-0 hover:bg-purple-100 font-semibold text-lg  rounded-md duration-300 hover:text-slate-800"
             >
               • Playground
             </h1>
