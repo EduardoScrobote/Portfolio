@@ -3,8 +3,9 @@ import { ProjectPropType } from "./Projetcs.type";
 export const ProjectsData: ProjectPropType = [
   {
     date: "2023 / atualmente",
-    project: "App-Sentinel",
+    project: "Programação fortificada",
     desc: "Projeto de criação de conteúdo sobre desenvolvimento de software",
+    path: "https://www.youtube.com/@ProgramacaoFortificada/featured",
   },
   {
     date: "2023 / atualmente",
@@ -14,8 +15,7 @@ export const ProjectsData: ProjectPropType = [
   },
   {
     date: "2023 / atualmente",
-    project: "Programação fortificada",
+    project: "App-Sentinel",
     desc: "Projeto de criação de conteúdo sobre desenvolvimento de software",
-    path: "https://www.youtube.com/@ProgramacaoFortificada/featured",
   },
 ];
