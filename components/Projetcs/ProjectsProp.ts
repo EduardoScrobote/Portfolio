@@ -24,4 +24,10 @@ export const ProjectsData: ProjectPropType = [
     desc: "Projeto para um professor de dota 2 com mais de 150 alunos",
     path: "https://bravery-black.vercel.app/",
   },
+  {
+    date: "2024 / atualmente",
+    project: "Sparti Health Innovation Solutions",
+    desc: "Empresa startup que desenvolve soluções para area da saúde",
+    path: "http://www.sparti.com.br/",
+  },
 ];
