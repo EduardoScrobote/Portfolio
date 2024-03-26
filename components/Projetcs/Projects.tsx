@@ -34,7 +34,7 @@ function Projects() {
             onClick={() => {
               if (prop.path) window.open(prop.path);
             }}
-            className="text-5xl text-purple-900 hover:text-slate-500 hover:cursor-pointer ease-in duration-300 "
+            className="text-4xl text-purple-900 hover:text-slate-500 hover:cursor-pointer ease-in duration-300 "
           >
             {prop.project}
           </h1>

@@ -43,7 +43,7 @@ export default function Home() {
             </h1>
           </div>
         </div>
-        <div className="w-screen h-full flex justify-end items-end bg-transparent text-black">
+        <div className="w-full h-full  flex justify-end items-end bg-transparent text-black">
           {activeInfo === "about" && <About />}
           {activeInfo === "projects" && <Projects />}
           {activeInfo === "contact" && <Contact />}
