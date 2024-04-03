@@ -22,7 +22,7 @@ export const ProjectsData: ProjectPropType = [
     date: "2024 / atualmente",
     project: "Bravery´s Academy",
     desc: "Projeto para um professor de dota 2 com mais de 150 alunos",
-    path: "https://bravery-black.vercel.app/",
+    path: "https://braveryacademy.com.br/",
   },
   {
     date: "2024 / atualmente",
